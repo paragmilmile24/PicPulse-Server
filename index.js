@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(
     cors({
         credentials: true,
-        origin: process.env.CLIENT_URL,
+        origin: "https://picpulse-niu2w.ondigitalocean.app",
     })
 );
 
@@ -40,5 +40,5 @@ dbConnect();
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
-    console.log(`Allowing requests from ${CLIENT_URL}`)
+    console.log(`Allowing requests from ${CLIENT_URL}`);
 });
