@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(
     cors({
         credentials: true,
-        origin: "https://picpulse-niu2w.ondigitalocean.app",
+        origin: "https://picpulse-32ifk.ondigitalocean.app",
     })
 );
 
