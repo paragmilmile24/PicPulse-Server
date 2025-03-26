@@ -35,9 +35,10 @@ app.get("/", (req, res) => {
 });
 
 PORT = process.env.PORT || 4001;
-
+CLIENT_URL = process.env.CLIENT_URL;
 dbConnect();
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
+    console.log(`Allowing requests from ${CLIENT_URL}`)
 });
